@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Forms v1</title>
+
+<meta name="description" content="Description goes here."/>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" media="screen"/>
+
+<link rel="stylesheet" href="css/main.css"/>
+
+</head>
+
+<body>
+
+<div id="header">
+	<h1>Course Application</h1>
+</div>
+
+<div id="container">
+
+	<form>
+	<h4>Your Contact Info</h4>
+	<fieldset>
+		<label for="name">Your Name</label>
+		<input type="text" placeholder="First">
+		<input type="text" placeholder="Last">
+	</fieldset>
+	<fieldset>
+		<label for="phone_number">Phone Number</label>
+		<input type="tel" class="number">&ndash;
+		<input type="tel" class="number">&ndash;
+		<input type="tel" class="number">
+	</fieldset>
+
+	<fieldset>
+		<label for="address">Address</label>
+		<input type="text" placeholder="Street Address" class="address">
+		<input type="text" placeholder="Address Line 2" class="address line2">
+		<input type="text" placeholder="City" class="city line3">
+		<input type="text" placeholder="State" class="state">
+		<input type="text" placeholder="Postal Code" class="code">
+	</fieldset>
+	
+
+	<h4>Skills &amp; Interests</h4>
+	<fieldset>
+		<label for="course">Course</label>
+		<select name="skills">
+			<option>Select One</option>
+			<optgroup label="Web Development">
+				<option>Front-end</option>
+				<option>Back-end</option>
+			</optgroup>
+			<optgroup label="Design">
+				<option>Visual Design</option>
+				<option>User Experience</option>
+			</optgroup>
+		</select>
+	</fieldset>
+
+	<fieldset>
+		<label for="experience">Past Experience</label>
+		<textarea rows="6" cols="50"></textarea>
+	</fieldset>
+
+	<h4>Anything Else?</h4>
+	<fieldset>
+		<label for="referral">Referral</label>
+		<select name="referral">
+			<option>None</option>
+			<option>Friend</option>
+			<option>Instructor</option>
+			<option>Online</option>
+		</select>
+	</fieldset>
+
+	<fieldset>
+		<label for="comments">Comments</label>
+		<textarea rows="6" cols="50"></textarea>
+	</fieldset>
+
+	<input type="submit" value="Save Draft">
+	<input type="submit" value="Submit">	
+	</form>
+
+</div>
+
+
+
+</body>
+</html>
